@@ -1,0 +1,53 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "type": ".",
+  "scripts": {
+    "start": "nodemon --exec babel-node server.mjs",
+    "eslint": "eslint ./",
+    "eslint-fix": "eslint ./ --fix",
+    "test": "mocha --timeout 20000 --exit test",
+    "db-seed": "node app/scripts/db-seed.mjs",
+    "db-create": "node app/scripts/db-create.mjs"
+  },
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "is-there": "^4.4.4",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.4",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.0",
+    "path": "^0.12.7",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "shortid": "^2.2.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@types/chai": "^4.2.16",
+    "babel-loader": "^8.0.6",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "mocha": "^8.3.2",
+    "nodemon": "^1.19.1",
+    "open": "^6.4.0"
+  }
+}
