@@ -1,5 +1,5 @@
 # Cesium API
-This is the backend code for FIS Ethos.
+This is the backend code for a demo project.
 
 ### Tech
 
